@@ -1,0 +1,29 @@
+Get http://localhost:3000/subscribers
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Samar",
+    "subscribedTo": "Money Heist"
+}
+
+###
+
+GET http://localhost:3000/subscribers/612fc1fb38d9b0bc8bb9f1f9
+
+###
+
+DELETE http://localhost:3000/subscribers/612fc1fb38d9b0bc8bb9f1f9
+
+###
+
+PATCH  http://localhost:3000/subscribers/612fc1fb38d9b0bc8bb9f1f9
+Content-Type: application/json
+
+{
+    "name": "Samar",
+    "subscribedTo": "David Dobrik"
+}
