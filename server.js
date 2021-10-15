@@ -5,6 +5,7 @@ const port = 3000
 const mongoose = require('mongoose')
 
 app.use(express.json())
+app.use(express.urlencoded({extended: false}));
 
 mongoose.connect(process.env.DATABASE_URL)
 const db = mongoose.connection
